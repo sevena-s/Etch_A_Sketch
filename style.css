@@ -1,7 +1,12 @@
 @font-face {
     font-family: boldFont;
     src: url(./fonts/Sora-Medium.ttf);
-  }
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
 
 body{
     background-image: url(./photos/back.png);
@@ -13,16 +18,22 @@ body{
 
 .content{
     display: flex;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .title{
     color: #8E4740;
     font-size: 40px;
     font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 80px;
 }
 
 .container{
@@ -32,6 +43,7 @@ body{
     grid-gap: 1px 1px;
     border: 8px solid #FCDEAC;
     background-color: #F3B6B1;
+    margin-top: 16px;
 }
 
 .item{
@@ -48,6 +60,10 @@ div.item:hover{
 
 .sliderDiv{
     width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F3B6B1;
     cursor: url(./photos/cursor1.png), auto;
 }
 
@@ -55,7 +71,7 @@ div.item:hover{
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 15px;
+    height: 10px;
     background: #FEF9F7;
     border-radius: 5px;
     outline: none;
@@ -71,6 +87,29 @@ div.item:hover{
     border-radius: 100%;
     cursor: url(./photos/cursor2.png), auto;
   }
+
+  .val{
+      margin-left: 10px;
+  }
+
+  .buttons{
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+  }
+
+  .clear{
+      background-image: url(./photos/button1.png);
+      background-repeat: no-repeat;
+      background-size: 150px 50px;
+      width: 150px;
+      height: 50px;
+      font-family: boldFont;
+      color: #8E4740;
+      font-size: 16px;
+      cursor: url(./photos/cursor2.png), auto;
+  }
+
 
 
 

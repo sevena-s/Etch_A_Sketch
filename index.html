@@ -9,11 +9,17 @@
 </head>
 <body>
     <div class="content">
-        <div class="title">Etch-A-Sketch</div>
-        <div class="sliderDiv">
-            <input type="range" min="10" max="100" value="45" class="slider" id="slider">
+        <div class="game">
+            <div class="title">Etch-A-Sketch</div>
+            <div class="sliderDiv">
+                <input type="range" min="10" max="100" value="40" class="slider" id="slider">
+                <div class="val">45</div>
+            </div>
+            <div id="container" class="container"></div>
         </div>
-        <div id="container" class="container"></div>
+        <div class="buttons">
+            <button class="clear">CLEAR</button>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
